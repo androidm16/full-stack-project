@@ -1,0 +1,21 @@
+POST http://localhost:3050/users
+Content-Type: application/json 
+
+{
+"id": 0,
+"name": "Siyabonga Normal Mkhosana",
+"email": "kdbfksdhf@gmail.com",
+"contact": "30-5704893",
+"hashedPassword": "rhfgspnvppdofj"
+}
+
+###
+
+POST http://localhost:3050/login
+Content-Type: application/json 
+
+{
+
+"name": "Siyabonga Normal Mkhosana",
+
+}

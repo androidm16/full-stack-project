@@ -3,18 +3,29 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "devStart": "nodemon server.js"
+    "devStart": "nodemon server.js",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
+    "bcrypt": "^5.0.1",
     "express": "^4.17.3",
+    "jsonwebtoken": "^8.5.1",
     "mongoose": "^6.2.3"
   },
   "devDependencies": {
     "dotenv": "^16.0.0",
     "nodemon": "^2.0.15"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/androidm16/full-stack-project.git"
+  },
+  "bugs": {
+    "url": "https://github.com/androidm16/full-stack-project/issues"
+  },
+  "homepage": "https://github.com/androidm16/full-stack-project#readme",
+  "description": ""
 }

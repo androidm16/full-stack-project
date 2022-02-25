@@ -5,6 +5,7 @@ const app = express();
 const mongoose = require('mongoose');
 const User = require('./models/user');
 
+
 mongoose.connect(process.env.DATABASE_URL, { useNewUrlParser: true })
 const db = mongoose.connection
 db.on('error', (error) => console.error(error))
@@ -15,7 +16,7 @@ app.use(express.json())
 const userRouter = require('./routes/users')
 app.use('/users', userRouter)
 
-app.set('port', process.env.port || 3000) 
+app.set('port', process.env.port || 3050) 
 
 app.listen(app.get('port'), server =>{
     console.info(`Server listen on port ${app.get('port')}`);
