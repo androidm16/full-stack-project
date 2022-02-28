@@ -19,6 +19,10 @@ name: {
     type: String,
     required: true,
   },
+  contact: {
+    type: String,
+    required: true,
+  },
   avatar: {
     type: String,
     required: false,
@@ -33,6 +37,11 @@ name: {
     type: Date,
     required: true,
     default: Date.now,
+  },
+  cart: {
+    type: Array,
+    required: false,
+    default: []
   },
 });
 
